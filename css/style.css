@@ -60,7 +60,7 @@ a:focus {
     background: #222222 !important;
 }
 
-.navbar-expand-md .navbar-nav .nav-item {
+.navbar-expand-lg .navbar-nav .nav-item {
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, .2);
 }
@@ -69,13 +69,13 @@ a:focus {
     border-top: none;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
     color: #ffffff;
     padding: 5px 15px 7px 15px;
     transition: all .3s;
 }
 
-.navbar-expand-md .navbar-nav .nav-link i {
+.navbar-expand-lg .navbar-nav .nav-link i {
     color: #FF6F61;
     float: right;
     padding-top: 5px;
@@ -99,6 +99,39 @@ a:focus {
     -moz-transition: margin 200ms ease-out;
     -o-transition: margin 200ms ease-out;
     transition: margin 200ms ease-out;
+}
+
+.wrapper .skills {
+    padding-top: 15px;
+}
+
+.wrapper .skill-name {
+    margin-top: 15px;
+}
+
+.wrapper .skill-name p {
+    /*display: inline-block;*/
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrapper .skill-name p:last-child {
+    float: right;
+}
+
+.wrapper .progress {
+    height: 5px;
+    border: 1px solid #FF6F61;
+    border-radius: 0;
+    background: #ffffff;
+}
+
+.wrapper .progress .progress-bar {
+    width: 1px;
+    background: #FF6F61;
+    border-radius: 0;
+    transition: 1s;
 }
 
 @media (min-width: 768px) {
@@ -645,6 +678,93 @@ a:focus {
     margin: 0;
 }
 
+/**********************************/
+/********* Experience CSS *********/
+/**********************************/
+.experience {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #F6D155;
+}
+
+.experience .exp-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #FF6F61;
+    border-bottom: 1px solid #FF6F61;
+}
+
+.experience .col-md-6:first-child .exp-col {
+    padding-top: 0;
+}
+
+.experience .col-md-6:last-child .exp-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .experience .col-md-6:nth-child(-n+2) .exp-col {
+        padding-top: 0;
+    }
+
+    .experience .col-md-6:last-child .exp-col,
+    .experience .col-md-6:nth-last-child(2) .exp-col {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.experience .exp-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.experience .exp-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #FF6F61;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.experience .exp-col span i {
+    color: #FF6F61;
+}
+
+.experience .exp-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.experience .exp-col h4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.experience .exp-col h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience .exp-col p {
+    margin: 0;
+}
+
+
 
 /**********************************/
 /*********** Service CSS **********/
@@ -1066,7 +1186,13 @@ a:focus {
     background: #222222;
 }
 
-
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 /**********************************/
 /*********** Footer CSS ***********/
 /**********************************/
