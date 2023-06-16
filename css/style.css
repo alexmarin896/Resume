@@ -40,6 +40,7 @@ a:focus {
     width: 100%;
     float: left;
     background: #222222;
+    
 }
 
 .wrapper .content {
@@ -78,7 +79,7 @@ a:focus {
 .navbar-expand-lg .navbar-nav .nav-link i {
     color: #FF6F61;
     float: right;
-    padding-top: 5px;
+    padding-top: 50x;
     transition: all .3s;
 }
 
@@ -102,7 +103,13 @@ a:focus {
 }
 
 .wrapper .skills {
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.wrapper .skills-bio {
+    padding-top: 60px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -171,6 +178,7 @@ a:focus {
         scrollbar-width: thin;
         scrollbar-color: gray;
         z-index: 2;
+        
     }
 
     .wrapper .sidebar:hover {
@@ -302,12 +310,24 @@ a:focus {
 
 
 .progress-bar-circle {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: 
-    radial-gradient(closest-side, white 79%, transparent 80% 100%),
-    conic-gradient(hotpink 75%, pink 0);  
+    radial-gradient(closest-side, #222222 85%, transparent 80% 100%),
+    conic-gradient(#9DDA52 85%, white 0);  
+    padding: 5px 0;
+    margin: 15px 15px 15px 10px;
+}
+
+.progress-bar-circle2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, #222222 85%, transparent 80% 100%),
+    conic-gradient(#9DDA52 100%, white 0);  
+    margin: -85px 15px 15px 140px;
 }
 
 /**********************************/
