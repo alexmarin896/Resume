@@ -106,6 +106,7 @@ a:focus {
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 15px;
 }
 
 .wrapper .skills-bio {
@@ -175,6 +176,7 @@ a:focus {
         margin-left: -250px;
         float: left;
         overflow: auto;
+        overflow-x: hidden;
         scrollbar-width: thin;
         scrollbar-color: gray;
         z-index: 2;
