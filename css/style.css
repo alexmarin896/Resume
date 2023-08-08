@@ -240,7 +240,8 @@ a:focus {
     }
     
     .navbar-brand {
-        display: none;
+        display:inline-block;
+        padding: 0px 300px 0px 0px
     }
     
 
