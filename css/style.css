@@ -273,7 +273,7 @@ a:focus {
     }
 }
 
-@media (min-width: 992px) {
+ @media (min-width: 992px) {
     .wrapper .sidebar {
         margin: 0;
     }
@@ -330,6 +330,10 @@ a:focus {
     radial-gradient(closest-side, #222222 85%, transparent 80% 100%),
     conic-gradient(#9DDA52 100%, white 0);  
     margin: -85px 15px 15px 140px;
+}
+
+button.navbar-toggler {
+    padding-left:400px  ;
 }
 
 /**********************************/
