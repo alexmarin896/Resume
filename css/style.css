@@ -53,6 +53,7 @@ a:focus {
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: gray;
+  visibility:hidden;
   
 }
 
@@ -183,7 +184,7 @@ a:focus {
 }
 
 
-@media (min-width: 68px) {
+@media (min-width: 0px) {
     .wrapper .content {
         padding: 60px 0px 30px 30px;
     }
@@ -301,13 +302,13 @@ a:focus {
     
     .sidebar:hover .sidebar-footer {
         display: block;
-    }
+    } 
 }
 
  @media (min-width: 992px) {
-    .wrapper .sidebar {
+     .wrapper .sidebar {
         margin: 0;
-    }
+    } 
 
     .wrapper .content {
         width: calc(100% - 300px);
@@ -327,7 +328,9 @@ a:focus {
     .sidebar .sidebar-footer {
         display: block;
     }
-}
+    
+
+} 
 
 @media (max-width: 1140px) {
     .wrapper .content {
@@ -338,6 +341,15 @@ a:focus {
 @media (max-width: 576px) {
     .wrapper .content {
         padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+        .button1 {
+         visibility: visible;
+     }
+    .wrapper .sidebar:hover .button1{
+        visibility: hidden;
     }
 }
 
@@ -364,7 +376,7 @@ a:focus {
 }
 
 button.navbar-toggler {
-        
+    
 }
 
 
