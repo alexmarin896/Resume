@@ -32,19 +32,53 @@ a:focus {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin: 4px 250px 0px 250px;
+  margin: 0px 250px 0px 250px;
   transition-duration: 0.4s;
   cursor: pointer;
+    position:absolute;
+  background-color: #000000;
+  top: 0; 
+  right: 0;
+  left: 0;
+  z-index: 4;
+  width: 300px;
+  height: 100%;
+  margin-left: -250px;
+  float: left;
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: gray;
+  visibility:hidden;
 }
 
 
 .button1 {
   position:absolute;
-  background-color: #222222;
+  background-color: #FF6F61;
   top: 0; 
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
+  width: 300px;
+  height: 10%;
+  margin-left: -250px;
+  float: left;
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: gray;
+  visibility:hidden;
+  
+}
+
+.button2 {
+  position:absolute;
+  background-color: #FFFFFF;
+  top: 0; 
+  right: 0;
+  left: 0;
+  z-index: 4;
   width: 300px;
   height: 100%;
   margin-left: -250px;
@@ -345,10 +379,10 @@ a:focus {
 }
 
 @media (max-width: 992px) {
-        .button1 {
+        .button {
          visibility: visible;
      }
-    .wrapper .sidebar:hover .button1{
+    .wrapper .sidebar:hover .button{
         visibility: hidden;
     }
 }
@@ -1046,6 +1080,17 @@ button.navbar-toggler {
     top: 50%;
 }
 
+/* .portfolio .btn {
+    border-radius: 0;
+    color: #222222;
+    background: #FF6F61;
+    transition: all .3s;
+}
+
+.portfolio .btn:hover {
+    color: #FF6F61;
+    background: #222222; */
+
 
 /**********************************/
 /*********** Review CSS ***********/
@@ -1278,7 +1323,7 @@ button.navbar-toggler {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 /**********************************/
 /*********** Footer CSS ***********/
